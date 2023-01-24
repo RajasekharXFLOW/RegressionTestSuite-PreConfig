@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Pre-Config Regression Test Suite">
+	<test name="Login Test">
+		<classes>
+			<class name = "testrunners.LoginTest"></class>
+		</classes>
+	</test>
+	<test name="Create New Vertical Test">
+		<classes>
+			<class name = "testrunners.CreateNewVerticalTest"></class>
+		</classes>
+	</test>
+	<test name="Modify Existing Vertical Test">
+		<classes>
+			<class name = "testrunners.ModifyVerticalTestCase"></class>
+		</classes>
+	</test>
+	<test name="Delete Existing Vertical Test">
+		<classes>
+			<class name = "testrunners.DeleteVerticalTestCase"></class>
+		</classes>
+	</test>
+	<test name="Create New Function Test">
+		<classes>
+			<class name = "testrunners.CreateNewFunctionTestCase"></class>
+		</classes>
+	</test>
+</suite>

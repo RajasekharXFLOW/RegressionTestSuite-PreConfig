@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Pre-Config Regression Test Suite" duration-ms="138654" started-at="2023-01-19T13:07:56Z" finished-at="2023-01-19T13:10:14Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunners.LoginTest@271053e1]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunners.CreateNewVerticalTest@2d928643]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunners.ModifyVerticalTestCase@148080bb]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunners.DeleteVerticalTestCase@2038ae61]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Login Test" duration-ms="34439" started-at="2023-01-19T13:07:56Z" finished-at="2023-01-19T13:08:30Z">
+      <class name="testrunners.LoginTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunners.LoginTest@271053e1]" name="setUpClass" is-config="true" duration-ms="149" started-at="2023-01-19T13:07:56Z" finished-at="2023-01-19T13:07:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunners.LoginTest@271053e1]" name="feature" duration-ms="33993" started-at="2023-01-19T13:07:56Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2023-01-19T13:08:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login validation]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunners.LoginTest@271053e1]" name="tearDownClass" is-config="true" duration-ms="234" started-at="2023-01-19T13:08:30Z" finished-at="2023-01-19T13:08:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunners.LoginTest -->
+    </test> <!-- Login Test -->
+    <test name="Create New Vertical Test" duration-ms="27083" started-at="2023-01-19T13:08:30Z" finished-at="2023-01-19T13:08:57Z">
+      <class name="testrunners.CreateNewVerticalTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunners.CreateNewVerticalTest@2d928643]" name="setUpClass" is-config="true" duration-ms="9" started-at="2023-01-19T13:08:30Z" finished-at="2023-01-19T13:08:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunners.CreateNewVerticalTest@2d928643]" name="feature" duration-ms="26996" started-at="2023-01-19T13:08:30Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2023-01-19T13:08:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Create new vertical feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunners.CreateNewVerticalTest@2d928643]" name="tearDownClass" is-config="true" duration-ms="72" started-at="2023-01-19T13:08:57Z" finished-at="2023-01-19T13:08:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunners.CreateNewVerticalTest -->
+    </test> <!-- Create New Vertical Test -->
+    <test name="Modify Existing Vertical Test" duration-ms="53979" started-at="2023-01-19T13:08:57Z" finished-at="2023-01-19T13:09:51Z">
+      <class name="testrunners.ModifyVerticalTestCase">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunners.ModifyVerticalTestCase@148080bb]" name="setUpClass" is-config="true" duration-ms="27" started-at="2023-01-19T13:08:57Z" finished-at="2023-01-19T13:08:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunners.ModifyVerticalTestCase@148080bb]" name="feature" duration-ms="53848" started-at="2023-01-19T13:08:57Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2023-01-19T13:09:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edit existing vertical feature]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at stepdefinitions.PreconfigLibrary.i_should_see_modified_vertical(PreconfigLibrary.java:256)
+at ✽.Then i should see modified vertical "Test edit Vertical"(featurefiles/editvertical.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunners.ModifyVerticalTestCase@148080bb]" name="tearDownClass" is-config="true" duration-ms="97" started-at="2023-01-19T13:09:51Z" finished-at="2023-01-19T13:09:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunners.ModifyVerticalTestCase -->
+    </test> <!-- Modify Existing Vertical Test -->
+    <test name="Delete Existing Vertical Test" duration-ms="23101" started-at="2023-01-19T13:09:51Z" finished-at="2023-01-19T13:10:14Z">
+      <class name="testrunners.DeleteVerticalTestCase">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunners.DeleteVerticalTestCase@2038ae61]" name="setUpClass" is-config="true" duration-ms="27" started-at="2023-01-19T13:09:51Z" finished-at="2023-01-19T13:09:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunners.DeleteVerticalTestCase@2038ae61]" name="feature" duration-ms="23000" started-at="2023-01-19T13:09:51Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2023-01-19T13:10:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Delete existing vertical feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunners.DeleteVerticalTestCase@2038ae61]" name="tearDownClass" is-config="true" duration-ms="69" started-at="2023-01-19T13:10:14Z" finished-at="2023-01-19T13:10:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunners.DeleteVerticalTestCase -->
+    </test> <!-- Delete Existing Vertical Test -->
+  </suite> <!-- Pre-Config Regression Test Suite -->
+</testng-results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Pre-Config Regression Test Suite]">
+  <test thread-count="5" name="Modify Existing Vertical Test(failed)">
+    <classes>
+      <class name="testrunners.ModifyVerticalTestCase">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- testrunners.ModifyVerticalTestCase -->
+    </classes>
+  </test> <!-- Modify Existing Vertical Test(failed) -->
+</suite> <!-- Failed suite [Pre-Config Regression Test Suite] -->
